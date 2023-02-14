@@ -13,7 +13,7 @@ import { CreateReportDto } from './dto/create-report.dto';
 import { UpdateReportDto } from './dto/update-report.dto';
 import { ApiTags } from '@nestjs/swagger';
 
-@Controller('{producer}/reports')
+@Controller(':producer/reports')
 @ApiTags('Reports')
 export class ReportController {
   constructor(private readonly reportService: ReportService) {}

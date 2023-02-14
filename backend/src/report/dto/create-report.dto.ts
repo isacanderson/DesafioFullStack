@@ -11,7 +11,7 @@ export class CreateReportDto {
     @IsNumber() @IsNotEmpty()
     cropArea: number;
 
-    @IsNumber()
+    @IsNumber() 
     productionCost: number;
 
     @IsNumber()
